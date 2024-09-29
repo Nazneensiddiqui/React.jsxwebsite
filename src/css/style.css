@@ -1,0 +1,23 @@
+.me-auto{
+    gap: 20px;
+   position: relative;
+   left: 200px;
+   color:white;
+}
+
+.carou{
+    margin-top: 20px;
+}
+
+.card1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+.card2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
