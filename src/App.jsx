@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Hero from "./components/hero.jsx";
 import Cardmanu from "./components/card.jsx";
+import Footer from "./components/footer.jsx";
 
 
 
@@ -25,6 +26,7 @@ const App=()=>{
       </Navbar>
 <Hero/>
 <Cardmanu/>
+<Footer/>
 
  
   </>
