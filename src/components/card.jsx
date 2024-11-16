@@ -8,7 +8,10 @@ import w2 from "../images/w2.jpg";
 import w3 from "../images/w3.jpg";
 import img9 from "../images/img9.jpg";
 
+import React, { useState } from "react";
+
 const Cardmanu=()=> {
+  const [hover, setHover] = useState(false);
   return (
     <>
     <div className='card1'>
@@ -84,6 +87,24 @@ const Cardmanu=()=> {
 </div>
 
 <div id="big"><img src={img9}/></div>
+
+
+
+
+  <div
+    className="card"
+    onMouseEnter={() => setHover(true)} // Hover शुरू होते ही state true
+    onMouseLeave={() => setHover(false)} // Hover खत्म होते ही state false
+  >
+    <div className="image-container">
+      <img
+        src="https://thedecorkart.com/cdn/shop/files/009A2020_165x.jpg?v=1718583769" // Replace with your image URL
+        alt="Product"
+        className={`product-image ${hover ? "zoom" : ""}`} // Zoom effect class
+      />
+      {hover && <div className="add-to-cart">Add to Cart</div>} {/* Text on hover */}
+    </div>
+  </div>
 
 </>
   );
